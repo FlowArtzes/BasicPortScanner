@@ -3,7 +3,7 @@ import sys
 import socket 
 from datetime import datetime
 
-#using pyfiglet to make the assci art of the port scanner
+#using pyfiglet to make the ASSCI art of the port scanner
 ascii_banner = pyfiglet.figlet_format("PORT SCANNER")
 print(ascii_banner)
 
@@ -28,7 +28,7 @@ try:
 
     #Return open port
 
-    #varaible result which is the result of the socket if its 0 which is succesful conneciton then print string Port and format with the port
+    #variable result which is the result of the socket if its 0 which is successful connection then print string Port and format with the port
     result = s.connect_ex((target,port))
     if result ==0:
         print("[*] Port {} is open".format(port))
@@ -36,9 +36,9 @@ try:
     s.close()
 
 except KeyboardInterrupt:
-    print("\n Exiting Application :(")
+    print("\n Exiting Application :")
     sys.exit()
 
 except socket.error:
-    print("\ Host not responding :(")
+    print("\ Host not responding :")
     sys.exit()    
