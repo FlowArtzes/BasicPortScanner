@@ -5,7 +5,7 @@ from datetime import datetime
 import threading
 
 # Using pyfiglet to make the ASCII art of the port scanner
-ascii_banner = pyfiglet.figlet_format("PORT SCANNER")
+ascii_banner = pyfiglet.figlet_format("FLOWS PORT SCANNER")
 print(ascii_banner)
 
 # Target variable is a string in user input
